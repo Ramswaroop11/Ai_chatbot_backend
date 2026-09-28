@@ -41,7 +41,10 @@ public class ChatController {
                 conversationRepository;
     }
 
-
+    @GetMapping("/test")
+    String test() {
+    	return "Backend is working";
+    }
     // =========================================================
     // NEW CHAT
     // =========================================================
