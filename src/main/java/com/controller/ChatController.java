@@ -18,7 +18,12 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/chat")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+	    origins = {
+	        "http://localhost:5173",
+	        "https://ramswaroop11-ai-chatbot.netlify.app"
+	    }
+	)
 public class ChatController {
 
     private final ChatService chatService;
